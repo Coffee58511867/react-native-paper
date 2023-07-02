@@ -6,7 +6,7 @@ export default function CreateAccount({navigation}) {
   const handleClick = () => {
     try {
       Alert.alert("Confirm Delete", "Are you sure you want to delete");
-      navigation.push('Login');
+      navigation.push('Menu');
     } catch (error) {
       console.log(error);
     }

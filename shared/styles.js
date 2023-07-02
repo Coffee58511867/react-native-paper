@@ -107,5 +107,15 @@ export const styles = StyleSheet.create({
       height: '80',
       borderWidth: 2,
       backgroundColor: 'white',
-    }
+    },
+
+   // Signin with Imgae Background
+   
+    container3: {
+      flex: 1,
+    },
+    image: {
+      flex: 1,
+      justifyContent: 'center',
+    },
   });

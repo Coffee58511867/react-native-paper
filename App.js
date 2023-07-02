@@ -2,6 +2,7 @@ import CreateAccount from "./components/Create_Account";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import SignIn from "./components/Signin";
+import Card from "./components/Cards";
 
 const Stack = createStackNavigator();
 
@@ -29,6 +30,7 @@ export default function App() {
           component={SignIn}
         />
         <Stack.Screen name="Register" component={CreateAccount} />
+        <Stack.Screen name="Menu" component={Card} />
       </Stack.Navigator>
     </NavigationContainer>
   );
