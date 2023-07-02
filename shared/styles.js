@@ -11,5 +11,10 @@ export const styles = StyleSheet.create({
     {
         fontSize: 25,
         
+    },
+    registerTitle: {
+      fontSize: 30,
+      fontWeight: 600,
+      padding: 10,
     }
   });
