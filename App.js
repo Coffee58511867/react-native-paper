@@ -3,6 +3,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import SignIn from "./components/Signin";
 import Card from "./components/Cards";
+import SignIn2 from "./components/Signin2";
+import SignInUser from "./authentication/Register";
 
 const Stack = createStackNavigator();
 
@@ -27,9 +29,10 @@ export default function App() {
           options={{
             headerShown: false,
           }}
-          component={SignIn}
+          component={SignIn2}
         />
         <Stack.Screen name="Register" component={CreateAccount} />
+        <Stack.Screen name="Create Account" component={SignInUser} />
         <Stack.Screen name="Menu" component={Card} />
       </Stack.Navigator>
     </NavigationContainer>
