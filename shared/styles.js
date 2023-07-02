@@ -40,14 +40,14 @@ export const styles = StyleSheet.create({
     btn: {
       height: 40,
       marginTop: 10,
-      backgroundColor: "#0080ff",
-      width: 250,
+      backgroundColor: "#0D3AA9",
+      width: 300,
       borderRadius: 6,
     },
     btnText: {
       color: "white",
       textAlign: "center",
-      marginTop: 3,
+      marginTop: 9,
       fontSize: 16,
     },
     btnOutline: {
@@ -71,12 +71,18 @@ export const styles = StyleSheet.create({
 
     input2: 
     {
-      borderWidth: 2,
-      width: 300,
+      borderWidth: 1,
+      width: '80%',
       height: 40,
       padding: 10,
       margin: 5,
       borderRadius: 6,
 
+    },
+    textAccount : 
+    {
+      fontSize: 16,
+      color: "#0D3AA9",
+      marginTop: 10,
     }
   });

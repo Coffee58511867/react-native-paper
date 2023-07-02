@@ -1,34 +1,37 @@
-import { View, TextInput, TouchableOpacity, Text, Alert, Image } from "react-native";
+import {
+  View,
+  TextInput,
+  Text,
+  Alert,
+  Image,
+} from "react-native";
 import { styles } from "../shared/styles";
-import CustomOutlineButtom from "../shared/outlineButton";
-import { useState } from "react";
-import { FlatList } from "react-native";
+import CustomButtom from "../shared/outlineButton";
+import CustomOutlineButtom from "../shared/Button";
 
-export default function SignUp() {
+export default function SignIn() {
   const handleClick = () => {
     try {
       Alert.alert("Confirm Delete", "Are you sure you want to delete");
-      setNumber(number + 4);
-      setNumber2(number2 + 1);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  const handleClick2 = () => {
-    try {
-      Alert.alert("Confirm Delete", "Are you sure you want to delete");
-      setBtn("Login");
     } catch (error) {
       console.log(error);
     }
   };
   return (
     <View style={styles.container2}>
-      <Image source={require('assets/paypal.webp')} />
+      {/* <Image source={require("assets/paypal.webp")} /> */}
+      <Image
+        source={{
+          uri: "https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_1280.png",
+        }}
+        style={{ width: 200, height: 80, marginBottom: 20 }}
+      />
       <TextInput placeholder="Email Address" style={styles.input2} />
       <TextInput placeholder="Password" style={styles.input2} />
 
-      <CustomOutlineButtom text="Login" onPress={handleClick} />
+      <CustomButtom text="Login" onPress={handleClick} />
+      <Text style={styles.textAccount}>Do not have an account ?</Text>
+      <CustomOutlineButtom text="Create Account" onPress={handleClick} />
     </View>
   );
 }
