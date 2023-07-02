@@ -27,5 +27,17 @@ export const styles = StyleSheet.create({
     input:
     {
       marginBottom: 7,
+      width: 300
+    },
+    btn: {
+      borderRadius: 10,
+      backgroundColor: 'green',
+      height: 45,
+    },
+    btnText : {
+      color: 'white',
+      fontWeight: 700,
+      fontSize: 18
+
     }
   });
