@@ -1,7 +1,6 @@
-import { View, TextInput, Text, Alert, Image } from "react-native";
+import { View, TextInput, Text, Alert, Image , ImageBackground} from "react-native";
 import { styles } from "../shared/styles";
 import CustomButtom from "../shared/outlineButton";
-import CustomOutlineButtom from "../shared/Button";
 
 export default function SignInUser({ navigation }) {
   const handleClick = () => {
@@ -13,9 +12,13 @@ export default function SignInUser({ navigation }) {
     }
   };
 
+  const image = {
+    uri: "https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg",
+  };
+
   return (
-    <View style={styles.container2}>
-      {/* <Image source={require("assets/paypal.webp")} /> */}
+    <View style={styles.container3}>
+         <ImageBackground source={image} resizeMode="cover" style={styles.image}>
       <Image
         source={{
           uri: "https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_1280.png",
@@ -45,6 +48,7 @@ export default function SignInUser({ navigation }) {
       />
 
       <CustomButtom text="Register" onPress={handleClick} />
+      </ImageBackground>
     </View>
   );
 }

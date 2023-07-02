@@ -6,7 +6,7 @@ export default function SignIn2({ navigation }) {
   const handleClick = () => {
     try {
       Alert.alert("Confirm Delete", "Are you sure you want to delete");
-      navigation.push("Register");
+      navigation.push("Create Account");
     } catch (error) {
       console.log(error);
     }
