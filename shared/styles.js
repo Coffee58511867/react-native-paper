@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     },
     container2: {
       flex: 1,
-      backgroundColor: '#fff',
+      backgroundColor: '#1974D2',
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -79,10 +79,21 @@ export const styles = StyleSheet.create({
       borderRadius: 6,
 
     },
+    inputSignin: 
+    {
+      borderWidth: 1,
+      width: '80%',
+      height: 40,
+      padding: 10,
+      backgroundColor: 'white',
+      margin: 5,
+      borderRadius: 6,
+
+    },
     textAccount : 
     {
       fontSize: 16,
-      color: "#0D3AA9",
+      color: "white",
       marginTop: 10,
     }
   });
