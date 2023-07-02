@@ -6,7 +6,8 @@ import { styles } from "../shared/styles";
 export default function Login() {
   return (
     <View style={{ padding: 20, margin: 10, marginTop: 200 }}>
-      <Text style={styles.registerTitle}>Get on Board</Text>
+      <Text style={styles.registerTitle}>Welcome Back</Text>
+      <Text  style={styles.loginSubTitle}>Make it work, make it right, make it fast</Text>
       <View style={{ justifyContent: "space-between" }}>
 
         <TextInput

@@ -15,7 +15,14 @@ export const styles = StyleSheet.create({
     registerTitle: {
       fontSize: 30,
       fontWeight: 600,
-      padding: 10,
+      padding: 10
+  
+    },
+    loginSubTitle: {
+      fontSize: 18,
+      fontWeight: 300,
+      padding: 10
+      
     },
     input:
     {
