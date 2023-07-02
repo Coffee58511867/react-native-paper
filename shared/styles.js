@@ -7,9 +7,17 @@ export const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
+    container2: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
     text: 
     {
         fontSize: 25,
+        fontStyle: 'italic',
+      
         
     },
     registerTitle: {
@@ -57,4 +65,18 @@ export const styles = StyleSheet.create({
       marginTop: 3,
       fontSize: 16,
     },
+
+
+    //Register Form
+
+    input2: 
+    {
+      borderWidth: 2,
+      width: 300,
+      height: 40,
+      padding: 10,
+      margin: 5,
+      borderRadius: 6,
+
+    }
   });

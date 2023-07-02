@@ -1,9 +1,8 @@
-import Register from './components/Register';
-import TabPage from './components/Tabs';
-import Login from './components/Login';
+import SignUp from "./components/Signup";
+
 
 export default function App() {
   return (
-    <Login />
+    <SignUp />
   );
 }

@@ -30,6 +30,7 @@ export default function Login() {
 
 
         <CustomOutlineButtom  text="Login" onPress={() => console.log("Pressed")}/>
+        <CustomOutlineButtom  text="Register" onPress={() => console.log("Pressed")}/>
       </View>
     </View>
   );

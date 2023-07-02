@@ -3,7 +3,7 @@ import { styles } from "./styles";
 
 export default function CustomOutlineButtom({ text, onPress }) {
   return (
-    <View>
+ 
       <TouchableOpacity>
         <View style={styles.btnOutline}>
           <Text onPress={onPress} style={styles.btnTextOutline}>
@@ -11,6 +11,6 @@ export default function CustomOutlineButtom({ text, onPress }) {
           </Text>
         </View>
       </TouchableOpacity>
-    </View>
+ 
   );
 }
