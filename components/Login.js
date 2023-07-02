@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text } from "react-native";
 import { TextInput, Button } from "react-native-paper";
 import { styles } from "../shared/styles";
-import CustomButtom from "../shared/Button";
+import CustomOutlineButtom from "../shared/outlineButton";
 
 export default function Login() {
   return (
@@ -16,7 +16,7 @@ export default function Login() {
           style={styles.input}
           placeholder="Email Address"
           mode="outlined"
-          left={<TextInput.Icon icon="lock" />}
+          left={<TextInput.Icon icon="mail" />}
         />
         <TextInput
           label="Password"
@@ -24,18 +24,12 @@ export default function Login() {
           secureTextEntry
           style={styles.input}
           mode="outlined"
+          left={<TextInput.Icon icon="lock" />}
           right={<TextInput.Icon icon="eye" />}
         />
 
-        <Button
-          icon="camera"
-          mode="contained"
-          buttonColor="blue"
-          onPress={() => console.log("Pressed")}
-        >
-          Press me
-        </Button>
-        <CustomButtom  text="Login" onPress={() => console.log("Pressed")}/>
+
+        <CustomOutlineButtom  text="Login" onPress={() => console.log("Pressed")}/>
       </View>
     </View>
   );

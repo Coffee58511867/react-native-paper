@@ -36,10 +36,25 @@ export const styles = StyleSheet.create({
       width: 250,
       borderRadius: 6,
     },
-    btnTex: {
+    btnText: {
       color: "white",
       textAlign: "center",
-      marginTop: 9,
+      marginTop: 3,
+      fontSize: 16,
+    },
+    btnOutline: {
+      height: 35,
+      marginTop: 10,
+      borderWidth: 2,
+      marginLeft: 20,
+      borderColor: 'black',
+      width: 250,
+      borderRadius: 6,
+    },
+    btnTextOutline: {
+      color: "blue",
+      textAlign: "center",
+      marginTop: 3,
       fontSize: 16,
     },
   });
