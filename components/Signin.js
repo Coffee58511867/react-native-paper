@@ -9,14 +9,23 @@ import { styles } from "../shared/styles";
 import CustomButtom from "../shared/outlineButton";
 import CustomOutlineButtom from "../shared/Button";
 
-export default function SignIn() {
+export default function SignIn({navigation}) {
   const handleClick = () => {
+    try {
+      Alert.alert("Confirm Delete", "Are you sure you want to delete");
+      navigation.push('Register');
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const handleRegister = () => {
     try {
       Alert.alert("Confirm Delete", "Are you sure you want to delete");
     } catch (error) {
       console.log(error);
     }
   };
+
   return (
     <View style={styles.container2}>
       {/* <Image source={require("assets/paypal.webp")} /> */}
@@ -31,7 +40,7 @@ export default function SignIn() {
 
       <CustomButtom text="Login" onPress={handleClick} />
       <Text style={styles.textAccount}>Do not have an account ?</Text>
-      <CustomOutlineButtom text="Create Account" onPress={handleClick} />
+      <CustomOutlineButtom text="Create Account" onPress={handleRegister} />
     </View>
   );
 }
