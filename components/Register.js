@@ -5,35 +5,42 @@ import { styles } from "../shared/styles";
 
 export default function Register() {
   return (
-    <View style={{ padding: 20, margin: 10 , marginTop: 200}}>
+    <View style={{ padding: 20, margin: 10, marginTop: 200 }}>
       <Text style={styles.registerTitle}>Get on Board</Text>
       <View style={{ justifyContent: "space-between" }}>
         <TextInput
           style={styles.input}
-          label="Email Address"
-          placeholder="Email Address"
+          label="Full Names"
+          placeholder="Full Names"
           mode="outlined"
+          left={<TextInput.Icon icon="profile" />}
         />
         <TextInput
           style={styles.input}
-          label="Email Address"
+          label="Phone Number"
           textColor="blue"
+          placeholder="Phone Number"
+          keyboardType="decimal-pad"
+          mode="outlined"
+          left={<TextInput.Icon icon="phone" />}
+        />
+
+        <TextInput
+          label="Email Address"
+          style={styles.input}
           placeholder="Email Address"
           mode="outlined"
+          left={<TextInput.Icon icon="lock" />}
         />
         <TextInput
           label="Password"
+          placeholder="Password"
           secureTextEntry
           style={styles.input}
           mode="outlined"
           right={<TextInput.Icon icon="eye" />}
         />
-        <TextInput
-          label="Email Address"
-          style={styles.input}
-          placeholder="Email Address"
-          mode="outlined"
-        />
+
         <Button
           icon="camera"
           mode="contained"
