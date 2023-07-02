@@ -13,7 +13,7 @@ export default function Register() {
           label="Full Names"
           placeholder="Full Names"
           mode="outlined"
-          left={<TextInput.Icon icon="profile" />}
+          left={<TextInput.Icon icon="lock" />}
         />
         <TextInput
           style={styles.input}
