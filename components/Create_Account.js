@@ -2,10 +2,11 @@ import { View, TextInput, Alert, Image } from "react-native";
 import { styles } from "../shared/styles";
 import CustomOutlineButtom from "../shared/outlineButton";
 
-export default function createAccount() {
+export default function createAccount({navigation}) {
   const handleClick = () => {
     try {
       Alert.alert("Confirm Delete", "Are you sure you want to delete");
+      navigation.push('Login');
     } catch (error) {
       console.log(error);
     }
@@ -19,10 +20,10 @@ export default function createAccount() {
         }}
         style={{ width: 200, height: 80, marginBottom: 20 }}
       />
-      <TextInput placeholder="Full Names" style={styles.input2} />
-      <TextInput placeholder="Phone Number" style={styles.input2} />
-      <TextInput placeholder="Email Address" style={styles.input2} />
-      <TextInput placeholder="Password" style={styles.input2} />
+      <TextInput placeholder="Full Names" style={styles.inputSignin} keyboardType='default' />
+      <TextInput placeholder="Phone Number" style={styles.inputSignin} keyboardType='phone-pad' />
+      <TextInput placeholder="Email Address" style={styles.inputSignin} keyboardType='email-address' />
+      <TextInput placeholder="Password" style={styles.inputSignin} secureTextEntry/>
 
       <CustomOutlineButtom text="Register" onPress={handleClick} />
     </View>
