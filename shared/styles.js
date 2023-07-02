@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     },
     container2: {
       flex: 1,
-      backgroundColor: '#1974D2',
+      // backgroundColor: '#1974D2',
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -81,13 +81,14 @@ export const styles = StyleSheet.create({
     },
 
     //Signin Form
+
     inputSignin: 
     {
       borderWidth: 1,
       width: '80%',
       height: 40,
       padding: 10,
-      backgroundColor: 'white',
+      // backgroundColor: 'white',
       margin: 5,
       borderRadius: 6,
 
@@ -97,5 +98,14 @@ export const styles = StyleSheet.create({
       fontSize: 16,
       color: "white",
       marginTop: 10,
+    }, 
+
+
+    card2:
+    {
+      width: '30%',
+      height: '80',
+      borderWidth: 2,
+      backgroundColor: 'white',
     }
   });

@@ -1,4 +1,4 @@
-import createAccount from "./components/Create_Account";
+import CreateAccount from "./components/Create_Account";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import SignIn from "./components/Signin";
@@ -28,7 +28,7 @@ export default function App() {
           }}
           component={SignIn}
         />
-        <Stack.Screen name="Register" component={createAccount} />
+        <Stack.Screen name="Register" component={CreateAccount} />
       </Stack.Navigator>
     </NavigationContainer>
   );

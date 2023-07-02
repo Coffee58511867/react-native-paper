@@ -39,8 +39,8 @@ export default function SignIn({navigation}) {
       <TextInput placeholder="Password" style={styles.inputSignin} secureTextEntry />
 
       <CustomButtom text="Login" onPress={handleClick} />
-      <Text style={styles.textAccount}>Do not have an account ?</Text>
-      <CustomOutlineButtom text="Create Account" onPress={handleRegister} />
+      {/* <Text style={styles.textAccount}>Do not have an account ?</Text>
+      <CustomOutlineButtom text="Create Account" onPress={handleRegister} /> */}
     </View>
   );
 }
