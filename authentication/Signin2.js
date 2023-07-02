@@ -21,6 +21,13 @@ export default function SignIn2({ navigation }) {
     }
   };
 
+  const handleReset = () => {
+    try {
+      navigation.push("Reset Password");
+    } catch (error) {
+      console.log(error);
+    }
+  };
   const image = {
     uri: "https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg",
   };
@@ -46,23 +53,19 @@ export default function SignIn2({ navigation }) {
         />
 
         <CustomButtom text="Login" onPress={handleClick} />
-        <TouchableOpacity
-   
-        >
-            <Text        style={{
-            marginTop: 10,
-            fontSize: 16,
-            marginLeft: 170,
-            color: "#0D3AA9",
-          }}>
-
-          Forgot Password
-            </Text>
+        <TouchableOpacity onPress={handleReset}>
+          <Text
+            style={{
+              marginTop: 10,
+              fontSize: 16,
+              marginLeft: 170,
+              color: "#0D3AA9",
+            }}
+          >
+            Forgot Password
+          </Text>
         </TouchableOpacity>
-        <Text style={{ fontSize: 17, marginTop: 20 }}>
-          Do not have an account ?{" "}
-          <Text style={{ color: "blue" }}>Register Now</Text>
-        </Text>
+        <CustomButtom text="Register" onPress={handleClick} />
       </ImageBackground>
     </View>
   );

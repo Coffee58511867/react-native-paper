@@ -2,7 +2,7 @@ import CreateAccount from "./components/Create_Account";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import Card from "./components/Cards";
-import SignIn2 from "./components/Signin2";
+import SignIn2 from "./authentication/Signin2";
 import SignInUser from "./authentication/Register";
 import ResetPassword from "./authentication/ForgotPassword";
 
