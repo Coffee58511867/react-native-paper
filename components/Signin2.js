@@ -1,4 +1,13 @@
-import { View, TextInput, Text, Alert, Image, ImageBackground } from "react-native";
+import {
+  View,
+  TextInput,
+  Text,
+  Alert,
+  Image,
+  ImageBackground,
+  TouchableOpacity,
+  Pressable,
+} from "react-native";
 import { styles } from "../shared/styles";
 import CustomButtom from "../shared/outlineButton";
 
@@ -37,6 +46,23 @@ export default function SignIn2({ navigation }) {
         />
 
         <CustomButtom text="Login" onPress={handleClick} />
+        <TouchableOpacity
+   
+        >
+            <Text        style={{
+            marginTop: 10,
+            fontSize: 16,
+            marginLeft: 170,
+            color: "#0D3AA9",
+          }}>
+
+          Forgot Password
+            </Text>
+        </TouchableOpacity>
+        <Text style={{ fontSize: 17, marginTop: 20 }}>
+          Do not have an account ?{" "}
+          <Text style={{ color: "blue" }}>Register Now</Text>
+        </Text>
       </ImageBackground>
     </View>
   );
