@@ -37,7 +37,7 @@ export const styles = StyleSheet.create({
     btnText : {
       color: 'white',
       fontWeight: 700,
-      fontSize: 18
+      fontSize: 18,
 
     }
   });

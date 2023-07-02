@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text } from "react-native";
 import { TextInput, Button } from "react-native-paper";
 import { styles } from "../shared/styles";
+import CustomButtom from "../shared/Button";
 
 export default function Login() {
   return (
@@ -34,7 +35,7 @@ export default function Login() {
         >
           Press me
         </Button>
-        
+        <CustomButtom  text="Login" onPress={() => console.log("Pressed")}/>
       </View>
     </View>
   );
