@@ -1,7 +1,7 @@
-import DashboardScreen from './components/Dashboard';
+import Register from './components/Register';
 
 export default function App() {
   return (
-     <DashboardScreen />
+     <Register />
   );
 }
