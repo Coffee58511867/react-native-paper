@@ -1,10 +1,10 @@
 import CreateAccount from "./components/Create_Account";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-import SignIn from "./components/Signin";
 import Card from "./components/Cards";
 import SignIn2 from "./components/Signin2";
 import SignInUser from "./authentication/Register";
+import ResetPassword from "./authentication/ForgotPassword";
 
 const Stack = createStackNavigator();
 
@@ -33,6 +33,7 @@ export default function App() {
         />
         <Stack.Screen name="Register" component={CreateAccount} />
         <Stack.Screen name="Create Account" component={SignInUser} />
+        <Stack.Screen name="Reset Password" component={ResetPassword} />
         <Stack.Screen name="Menu" component={Card} />
       </Stack.Navigator>
     </NavigationContainer>
