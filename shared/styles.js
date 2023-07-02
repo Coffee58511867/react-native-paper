@@ -79,6 +79,8 @@ export const styles = StyleSheet.create({
       borderRadius: 6,
 
     },
+
+    //Signin Form
     inputSignin: 
     {
       borderWidth: 1,

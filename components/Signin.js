@@ -26,8 +26,8 @@ export default function SignIn() {
         }}
         style={{ width: 200, height: 80, marginBottom: 20 }}
       />
-      <TextInput placeholder="Email Address" style={styles.inputSignin} />
-      <TextInput placeholder="Password" style={styles.inputSignin} />
+      <TextInput placeholder="Email Address" style={styles.inputSignin} keyboardType='email-address' />
+      <TextInput placeholder="Password" style={styles.inputSignin} secureTextEntry />
 
       <CustomButtom text="Login" onPress={handleClick} />
       <Text style={styles.textAccount}>Do not have an account ?</Text>
