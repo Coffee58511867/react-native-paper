@@ -5,8 +5,8 @@ export default function CustomOutlineButtom({ text, onPress }) {
   return (
  
       <TouchableOpacity>
-        <View style={styles.btn}>
-          <Text onPress={onPress} style={styles.btnText}>
+        <View style={styles.btnOutline}>
+          <Text onPress={onPress} style={styles.btnTextOutline}>
             {text}
           </Text>
         </View>
