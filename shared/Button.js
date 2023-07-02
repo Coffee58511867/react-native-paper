@@ -4,10 +4,12 @@ import { styles } from "./styles";
 export default function CustomButtom({ text, onPress }) {
   return (
     <View>
-      <TouchableOpacity style={styles.btn}>
+      <TouchableOpacity>
+        <View style={styles.btn}>
         <Text onPress={onPress} style={styles.btnText}>
           {text}
         </Text>
+        </View>
       </TouchableOpacity>
     </View>
   );

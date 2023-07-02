@@ -30,14 +30,16 @@ export const styles = StyleSheet.create({
       width: 300
     },
     btn: {
-      borderRadius: 10,
-      backgroundColor: 'green',
-      height: 45,
+      height: 40,
+      marginTop: 10,
+      backgroundColor: "#0080ff",
+      width: 250,
+      borderRadius: 6,
     },
-    btnText : {
-      color: 'white',
-      fontWeight: 700,
-      fontSize: 18,
-
-    }
+    btnTex: {
+      color: "white",
+      textAlign: "center",
+      marginTop: 9,
+      fontSize: 16,
+    },
   });
