@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import { styles } from "../shared/styles";
 import CustomButtom from "../shared/Button";
+import CustomOutlineButtom from "../shared/outlineButton";
 
 export default function SignIn2({ navigation }) {
   const handleClick = () => {
@@ -64,7 +65,7 @@ export default function SignIn2({ navigation }) {
             Forgot Password
           </Text>
         </TouchableOpacity>
-        <CustomButtom text="Register" onPress={handleClick} />
+        <CustomOutlineButtom text="Register" onPress={handleClick} />
       </ImageBackground>
     </View>
   );

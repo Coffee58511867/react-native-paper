@@ -51,18 +51,17 @@ export const styles = StyleSheet.create({
       fontSize: 16,
     },
     btnOutline: {
-      height: 35,
+      height: 40,
       marginTop: 10,
       borderWidth: 2,
-      marginLeft: 20,
       borderColor: 'black',
-      width: 250,
+      width: 300,
       borderRadius: 6,
     },
     btnTextOutline: {
       color: "blue",
       textAlign: "center",
-      marginTop: 3,
+      marginTop: 7,
       fontSize: 16,
     },
 
@@ -114,7 +113,6 @@ export const styles = StyleSheet.create({
     container3: {
       flex: 1,
       
-
     },
     image: {
       flex: 1,

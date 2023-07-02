@@ -6,8 +6,7 @@ import {
   Image,
 } from "react-native";
 import { styles } from "../shared/styles";
-import CustomButtom from "../shared/outlineButton";
-import CustomOutlineButtom from "../shared/Button";
+import CustomButtom from "../shared/Button";
 
 export default function SignIn({navigation}) {
   const handleClick = () => {
