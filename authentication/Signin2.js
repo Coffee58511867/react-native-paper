@@ -7,7 +7,7 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-import { styles } from "../shared/styles";
+import { styles } from "../styles/styles";
 import CustomButtom from "../shared/Button";
 import CustomOutlineButtom from "../shared/outlineButton";
 

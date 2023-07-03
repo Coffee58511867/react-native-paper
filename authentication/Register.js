@@ -1,5 +1,5 @@
-import { View, TextInput, Text, Alert, Image , ImageBackground} from "react-native";
-import { styles } from "../shared/styles";
+import { View, TextInput, Alert, Image , ImageBackground} from "react-native";
+import { styles } from "../styles/styles";
 import CustomButtom from "../shared/Button";
 
 export default function SignInUser({ navigation }) {

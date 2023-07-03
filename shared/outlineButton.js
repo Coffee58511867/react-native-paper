@@ -1,5 +1,5 @@
 import { TouchableOpacity, View, Text } from "react-native";
-import { styles } from "./styles";
+import { styles } from "../styles/styles";
 
 export default function CustomOutlineButtom({ text, onPress }) {
   return (
