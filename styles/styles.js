@@ -119,4 +119,21 @@ export const styles = StyleSheet.create({
       justifyContent: 'center',
       alignItems: 'center',
     },
+
+
+    // Dashboard
+
+    dashboardSubtitle : 
+    {
+      color: 'white',
+      fontSize: 17,
+      padding: 10,
+    },
+    dashboardTitle: 
+    {
+      color: 'white',
+      fontSize: 23,
+      textAlign: 'center',
+      padding: 10,
+    }
   });
