@@ -1,5 +1,5 @@
 import { View, TextInput, TouchableOpacity, Text, Alert } from "react-native";
-import { styles } from "../shared/styles";
+import { styles } from "../styles/styles";
 import CustomOutlineButtom from "../shared/outlineButton";
 import { useState } from "react";
 import { FlatList } from "react-native";

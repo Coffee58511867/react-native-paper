@@ -1,5 +1,5 @@
 import { View, TextInput, Alert, Image } from "react-native";
-import { styles } from "../shared/styles";
+import { styles } from "../styles/styles";
 import CustomOutlineButtom from "../shared/outlineButton";
 
 export default function CreateAccount({navigation}) {

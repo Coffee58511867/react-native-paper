@@ -1,5 +1,5 @@
 import { View, TouchableOpacity, Text } from "react-native";
-import { styles } from "../shared/styles";
+import { styles } from "../styles/styles";
 
 
 export default function Card(){

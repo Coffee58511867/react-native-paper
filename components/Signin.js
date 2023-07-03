@@ -5,7 +5,7 @@ import {
   Alert,
   Image,
 } from "react-native";
-import { styles } from "../shared/styles";
+import { styles } from "../styles/styles";
 import CustomButtom from "../shared/Button";
 
 export default function SignIn({navigation}) {

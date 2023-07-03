@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, Text, TouchableOpacity, View } from "react-native";
-import { styles } from "../shared/styles";
+import { styles } from "../styles/styles";
 
 export default function DashboardScreen() {
     const image = {uri: 'https://legacy.reactjs.org/logo-og.png'};

@@ -20,6 +20,14 @@ export default function SignIn2({ navigation }) {
       console.log(error);
     }
   };
+  const handleLogin = () => {
+    try {
+      Alert.alert("Confirm Delete", "Are you sure you want to delete");
+    
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const handleReset = () => {
     try {
@@ -60,7 +68,7 @@ export default function SignIn2({ navigation }) {
           secureTextEntry
         />
 
-        <CustomButtom text="Login" onPress={handleClick} />
+        <CustomButtom text="Login" onPress={handleLogin} />
         <TouchableOpacity onPress={handleReset}>
           <Text
             style={{

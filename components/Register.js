@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 import { TextInput, Button } from "react-native-paper";
-import { styles } from "../shared/styles";
+import { styles } from "../styles/styles";
 
 export default function Register() {
   return (
