@@ -66,7 +66,7 @@ export default function DashboardScreen() {
           width: "100%",
         }}
       >
-        <Text style={styles.dashboardTitle}>Monthly constribution</Text>
+        <Text style={styles.dashboardTitle}>Monthly Deposit</Text>
         <FlatList
           data={payments}
           renderItem={({ item }) => (
