@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { View, TextInput, Text } from "react-native";
 import { styles } from "../../styles/styles";
 import CustomButtom from "../../shared/Button";
 import RBSheet from "react-native-raw-bottom-sheet";
@@ -29,8 +29,13 @@ export default function CustomerMenu() {
           },
         }}
       >
-        <Text>Good Morning</Text>
-        <CustomButtom text="Register" onPress={handleClick} />
+        <Text style={styles.text}>Reset Password</Text>
+               <TextInput
+          placeholder="Email Address"
+          style={styles.inputSignin}
+          keyboardType="email-address"
+        />
+
         <CustomButtom text="Register" onPress={handleClick} />
       </RBSheet>
     </View>
