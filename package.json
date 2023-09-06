@@ -17,7 +17,8 @@
     "react-native": "0.71.8",
     "react-native-pager-view": "^6.1.2",
     "react-native-paper": "^5.9.0",
-    "react-native-paper-tabs": "^0.7.0"
+    "react-native-paper-tabs": "^0.7.0",
+    "react-native-raw-bottom-sheet": "^2.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

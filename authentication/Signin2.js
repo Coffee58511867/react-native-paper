@@ -10,6 +10,7 @@ import {
 import { styles } from "../styles/styles";
 import CustomButtom from "../shared/Button";
 import CustomOutlineButtom from "../shared/outlineButton";
+import RBSheet from "react-native-raw-bottom-sheet";
 
 export default function SignIn2({ navigation }) {
   const handleClick = () => {
@@ -82,6 +83,23 @@ export default function SignIn2({ navigation }) {
           </Text>
         </TouchableOpacity>
         <CustomOutlineButtom text="Register" onPress={handleClick} />
+        <CustomOutlineButtom text="Open Model" onPress={() => this.RBSheet.open()}/>
+
+        <RBSheet
+          ref={ref => {
+            this.RBSheet = ref;
+          }}
+          height={300}
+          openDuration={250}
+          customStyles={{
+            container: {
+              justifyContent: "center",
+              alignItems: "center"
+            }
+          }}
+        >
+          <Text>Good Morning</Text>
+        </RBSheet>
       </ImageBackground>
     </View>
   );
