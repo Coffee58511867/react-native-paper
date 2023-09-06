@@ -24,7 +24,7 @@ export default function SignIn2({ navigation }) {
   const handleLogin = () => {
     try {
       Alert.alert("Confirm Delete", "Are you sure you want to delete");
-      navigation.push('Dashboard');
+      navigation.push('Admin Menu');
     } catch (error) {
       console.log(error);
     }

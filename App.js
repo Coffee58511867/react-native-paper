@@ -6,6 +6,7 @@ import SignIn2 from "./authentication/Signin2";
 import SignInUser from "./authentication/Register";
 import ResetPassword from "./authentication/ForgotPassword";
 import DashboardScreen from "./components/Dashboard";
+import CustomerMenu from "./screens/dashboards/Menu";
 
 const Stack = createStackNavigator();
 
@@ -33,6 +34,7 @@ export default function App() {
           component={SignIn2}
         />
         <Stack.Screen name="Register" component={CreateAccount} />
+        <Stack.Screen name="Admin Menu" component={CustomerMenu} />
         <Stack.Screen name="Create Account" component={SignInUser} />
         <Stack.Screen name="Reset Password" component={ResetPassword} />
         <Stack.Screen name="Dashboard" component={DashboardScreen} />
