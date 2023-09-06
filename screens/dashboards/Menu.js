@@ -29,7 +29,7 @@ export default function CustomerMenu() {
           },
         }}
       >
-        <Text style={styles.text}>Reset Password</Text>
+        <Text style={styles.resetPasswordText}>Reset Password</Text>
                <TextInput
           placeholder="Email Address"
           style={styles.inputSignin}
